@@ -1,5 +1,4 @@
-//cada parte é um componente 
-import "./files/style.css"
+//cada parte é um componente
 
 
 import React, {Component} from 'react'
