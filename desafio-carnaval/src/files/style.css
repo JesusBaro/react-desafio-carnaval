@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color:rgb(87, 4, 87);
+    height: 15vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h1{
+ padding-left: 3rem;
+ font-size: 3rem;
+ color: white
+}
+body{
+    width: 100vw;
+    height:100vh;
+    background-color: purple;
+}
+
+.Content{
+    border: solid rgb(17, 255, 0);
+    width: 100vw;
+    height: 50vh;
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.CostumeBox{
+    border: solid yellow;
+    border-radius: 10%;
+    width: 17vw;
+    height: 35vh;
+    margin: 5rem, 2rem,3rem,2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    height: 30vh;
+    background-color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.CostumeBoxFooter{
+    border: solid yellow;
+    border-radius: 10%;
+    width: 10vw;
+    height: 25vh;
+    margin: 5rem, 2rem,3rem,2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
