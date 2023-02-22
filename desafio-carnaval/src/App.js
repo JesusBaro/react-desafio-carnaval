@@ -1,14 +1,12 @@
-//cada parte é um componente
 import bruxa from "./img/bruxa.png"
 import fada from "./img/fada.png"
+import fantasma from "./img/fantasma.png"
+import pirata from "./img/pirata.png"
+import vamp from "./img/vamp.png"
+import zumbi from "./img/zumbi.png"
 import "./files/style.css"
-
-
-
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
 class CarnavalPage extends Component {
-
   state = {
     imagensDaBody: [
       {
@@ -16,67 +14,80 @@ class CarnavalPage extends Component {
         titulo: "Bruxa"
       },
       {
-        imagem: "",
-        titulo: "fada"
+        imagem: `${fada}`,
+        titulo: "Fada"
       },
       {
-        imagem: "",
+        imagem: `${fantasma}`,
         titulo: "Fantasma"
       },
       {
-        imagem: "",
+        imagem: `${vamp}`,
         titulo: "Vampiro"
       },
       {
-        imagem: "",
+        imagem: `${zumbi}`,
         titulo: "Zumbi"
       },
       {
-        imagem: "",
+        imagem: `${pirata}`,
         titulo: "Pirata"
-      },
-    ]
-  }
-
-
-
-
+      }]}
   render() {
     return (
 
+//------------
+// Porque essa tag aqui ela não renderiza em cima da <body>, porém embaixo sim ?
+{/* <div class="header">
+<h1>Carnaval Vai na Web</h1>
+</div>, */},
+//------------
 
       <body>
-
         <div class="header">
           <h1>Carnaval Vai na Web</h1>
-        </div>,
+        </div>
+        <section class="Content">
+          <div class="CostumeBox">
+            <img class="ImagensDaBody" src={this.state.imagensDaBody[0].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <h3>{this.state.imagensDaBody[0].titulo}</h3>
+          </div>
+          <div class="CostumeBox">
+            <img class="ImagensDaBody" src={this.state.imagensDaBody[1].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <h3>{this.state.imagensDaBody[1].titulo}</h3>
+          </div>
+          <div class="CostumeBox">
+            <img class="ImagensDaBody" src={this.state.imagensDaBody[2].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <h3>{this.state.imagensDaBody[2].titulo}</h3>
+          </div>
+        </section>
 
         <section class="Content">
-          <div class="CostumeBox"></div>
-          <div class="CostumeBox"></div>
-          <div class="CostumeBox"></div>
-        </section>
-        <section class="Content">
-          <div class="CostumeBox"></div>
-          <div class="CostumeBox"></div>
-          <div class="CostumeBox"></div>
+          <div class="CostumeBox">
+            <img class="ImagensDaBody" src={this.state.imagensDaBody[3].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <h3>{this.state.imagensDaBody[3].titulo}</h3>
+          </div>
+          <div class="CostumeBox">
+            <img class="ImagensDaBody" src={this.state.imagensDaBody[4].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <h3>{this.state.imagensDaBody[4].titulo}</h3>
+          </div>
+          <div class="CostumeBox">
+            <img class="ImagensDaBody" src={this.state.imagensDaBody[5].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <h3>{this.state.imagensDaBody[5].titulo}</h3>
+          </div>
         </section>,
 
-
+        {/* Aqui ela renderiza */}
+        {/* <div class="header">
+  <h1>Carnaval Vai na Web</h1>
+ </div>, */}
 
         <footer class="footer">
-          <div class="CostumeBoxFooter"></div>
-          <div class="CostumeBoxFooter"></div>
-          <div class="CostumeBoxFooter"></div>
-          <div class="CostumeBoxFooter"></div>
-          <div class="CostumeBoxFooter"></div>
-          <div class="CostumeBoxFooter"></div>
-          <div class="CostumeBoxFooter"></div>
+          {this.state.imagensDaBody.map((item) => (
+            <div class="CostumeBoxFooter">
+              <img id="ImagensDaFooter" src={item.imagem} alt="imagens " />
+            </div>
+          ))}
         </footer>
-      </body>
-
-    )
-  }
-}
-
+      </body>)}}
 export default CarnavalPage
