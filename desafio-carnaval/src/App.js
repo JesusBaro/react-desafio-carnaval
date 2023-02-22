@@ -49,30 +49,42 @@ class CarnavalPage extends Component {
         </div>
         <section class="Content">
           <div class="CostumeBox">
-            <img class="ImagensDaBody" src={this.state.imagensDaBody[0].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <img class="ImagensDaBody" 
+            src={this.state.imagensDaBody[0].imagem} 
+            alt={this.state.imagensDaBody[0].titulo} />
             <h3>{this.state.imagensDaBody[0].titulo}</h3>
           </div>
           <div class="CostumeBox">
-            <img class="ImagensDaBody" src={this.state.imagensDaBody[1].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <img class="ImagensDaBody"
+             src={this.state.imagensDaBody[1].imagem}
+              alt={this.state.imagensDaBody[1].titulo} />
             <h3>{this.state.imagensDaBody[1].titulo}</h3>
           </div>
           <div class="CostumeBox">
-            <img class="ImagensDaBody" src={this.state.imagensDaBody[2].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <img class="ImagensDaBody" 
+            src={this.state.imagensDaBody[2].imagem} 
+            alt={this.state.imagensDaBody[2].titulo} />
             <h3>{this.state.imagensDaBody[2].titulo}</h3>
           </div>
         </section>
 
         <section class="Content">
           <div class="CostumeBox">
-            <img class="ImagensDaBody" src={this.state.imagensDaBody[3].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <img class="ImagensDaBody" 
+            src={this.state.imagensDaBody[3].imagem} 
+            alt={this.state.imagensDaBody[3].titulo} />
             <h3>{this.state.imagensDaBody[3].titulo}</h3>
           </div>
           <div class="CostumeBox">
-            <img class="ImagensDaBody" src={this.state.imagensDaBody[4].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <img class="ImagensDaBody" 
+            src={this.state.imagensDaBody[4].imagem} 
+            alt={this.state.imagensDaBody[4].titulo} />
             <h3>{this.state.imagensDaBody[4].titulo}</h3>
           </div>
           <div class="CostumeBox">
-            <img class="ImagensDaBody" src={this.state.imagensDaBody[5].imagem} alt={this.state.imagensDaBody[0].titulo} />
+            <img class="ImagensDaBody"
+             src={this.state.imagensDaBody[5].imagem} 
+             alt={this.state.imagensDaBody[5].titulo} />
             <h3>{this.state.imagensDaBody[5].titulo}</h3>
           </div>
         </section>,
@@ -85,7 +97,9 @@ class CarnavalPage extends Component {
         <footer class="footer">
           {this.state.imagensDaBody.map((item) => (
             <div class="CostumeBoxFooter">
-              <img id="ImagensDaFooter" src={item.imagem} alt="imagens " />
+              <img id="ImagensDaFooter" 
+              src={item.imagem} 
+              alt={item.titulo} />
             </div>
           ))}
         </footer>
